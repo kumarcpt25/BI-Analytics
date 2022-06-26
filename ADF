@@ -1,0 +1,3 @@
+
+Create Hashkey in ADF DF
+derive(DWhash = sha1(Name,ProductNumber,Color)) ~> DWHash
