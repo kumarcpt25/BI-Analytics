@@ -1,3 +1,12 @@
+Create row hash fingerprint
+Use this code in your data flow script to create a new derived column called DWhash that produces a sha1 hash of three columns.
+
+
+Copy
+derive(DWhash = sha1(Name,ProductNumber,Color)) ~> DWHash
+You can also use this script below to generate a row hash using all columns that are present in your stream, without needing to name each column:
+
+
 
 ##Create Hashkey in ADF DF
 derive(DWhash = sha1(Name,ProductNumber,Color)) ~> DWHash
