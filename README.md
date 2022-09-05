@@ -21,11 +21,11 @@ Unsupervised Learning.
 
 -----------------------------------------------------
 
-Imputation
+Imputation\\
 Imputation replaces missing values with either median, mean, or the most common value of the column or row in which the missing values exist.\
 
 Below example replaces missing values, represented by np.nan, with the mean of respective column (axis 0).\
-Example
+Example\
 imputer = preprocessing.Imputer(missing_values='NaN', strategy='mean')\
 
 imputer = imputer.fit(breast_cancer.data) \
